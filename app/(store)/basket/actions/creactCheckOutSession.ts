@@ -42,7 +42,7 @@ export async function creactCheckOutSession(
 
         const baseUrl = process.env.NODE_ENV === 'production' 
         ? `https://${process.env.VERCEL_URL}` 
-        : "https://my-shopr.netlify.app/";
+        : "my-shopr.netlify.app/";
       
       const successUrl = `${baseUrl}/success?session_id={CHECKOUT_SESSION_ID}&orderNumber=${metadata.orderNumber}`;
       

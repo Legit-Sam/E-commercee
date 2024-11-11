@@ -10,6 +10,6 @@ export const client = createClient({
   stega: {
     studioUrl: process.env.NODE_ENV === "production"
     ? `https://${process.env.VERCEL_URL}/studio`
-    : "https://my-shopr.netlify.app/studio"
+    : "my-shopr.netlify.app/studio"
   }  
 })
