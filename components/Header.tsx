@@ -16,7 +16,8 @@ const itemCount = userBasketStore((state) =>
 
     const createClerkPasskey =  async () => {
             try {
-                const response = await user?.createPasskey();
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
+                // const response = await user?.createPasskey();
                 
             } catch (error) {
                     console.log("Error:", JSON.stringify(error, null, 2));
