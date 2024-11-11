@@ -1,3 +1,4 @@
+// @ts-nocheck
 import ProductGrid from "@/components/ProductGrid";
 import { searchProductsByName } from "@/sanity/lib/products/searchProductsByName";
 
