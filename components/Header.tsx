@@ -14,15 +14,15 @@ const itemCount = userBasketStore((state) =>
 
 );
 
-    const createClerkPasskey =  async () => {
-            try {
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                // const response = await user?.createPasskey();
+    // const createClerkPasskey =  async () => {
+    //         try {
+    //             // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    //             // const response = await user?.createPasskey();
                 
-            } catch (error) {
-                    console.log("Error:", JSON.stringify(error, null, 2));
-            }
-    }
+    //         } catch (error) {
+    //                 console.log("Error:", JSON.stringify(error, null, 2));
+    //         }
+    // }
 
   return(
     <header className="flex flex-wrap justify-between items-center px-4 py-2">
@@ -88,13 +88,13 @@ const itemCount = userBasketStore((state) =>
                             <SignInButton mode="modal" />
                         )}
 
-                        {user?.passkeys.length === 0 && (
+                        {/* {user?.passkeys.length === 0 && (
                             <button onClick={createClerkPasskey}
                             className="bg-white hover:bg-blue-700 hover:text-white animate-pulse text-blue-500 font-bold py-2 px-4 rounded border-blue-300 border"
                             >
                                 Create passkey
                             </button>
-                        )}
+                        )} */}
                 </ClerkLoaded>
             </div>
         </div>
