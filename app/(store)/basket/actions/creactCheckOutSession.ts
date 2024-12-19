@@ -40,7 +40,7 @@ export async function creactCheckOutSession(
             customerId = customers.data[0].id;
         }
 
-        const baseUrl = "https://my-shopr.netlify.app/";
+        const baseUrl = "https://my-shopr.netlify.app";
 
       
       const successUrl = `${baseUrl}/success?session_id={CHECKOUT_SESSION_ID}&orderNumber=${metadata.orderNumber}`;
